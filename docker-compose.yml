@@ -1,8 +1,8 @@
 version: '3'
 services:
-  functions_python:
+  function:
     build: .
-    container_name: 'functions_python'
+    container_name: 'function_python'
     working_dir: '/root/'
     tty: true
     volumes:
