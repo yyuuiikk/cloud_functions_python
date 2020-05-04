@@ -8,7 +8,7 @@ HTTPトリガーにのみ対応。
 
 slackの任意のチャンネルにメッセージを投稿する処理を実装。
 
-```
+```python
 WEBHOOK_URL = os.getenv('WEBHOOK_URL')
 
 '''
@@ -28,7 +28,7 @@ def post_slack(request):
 $ touch src/env.yml
 ```
 
-```
+```python
 WEBHOOK_URL: https://xxxxxxxxxxxxxxxxxxx
 ```
 
