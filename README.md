@@ -73,5 +73,6 @@ True
 GCPプロジェクトには下記のコマンドでデプロイする。
 
 ```
+$ cd src/
 $ gcloud functions deploy post_slack --runtime=python37 --trigger-http --allow-unauthenticated --source=. --region=asia-northeast1 --env-vars-file=env.yml
 ```
