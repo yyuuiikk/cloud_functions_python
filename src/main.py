@@ -8,7 +8,7 @@ import yaml
 try:
     # local
     with open('./env.yml') as f:
-        os.environ.update(yaml.load(f))
+        os.environ.update(yaml.load(f, Loader=yaml.FullLoader))
 except FileNotFoundError as e:
     # Google Cloud Functions
     pass
