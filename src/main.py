@@ -7,7 +7,7 @@ import yaml
 # 環境変数の読み込み
 try:
     # local
-    with open('./env.yml') as f:
+    with open('/root/src/env.yml') as f:
         os.environ.update(yaml.load(f, Loader=yaml.FullLoader))
 except FileNotFoundError as e:
     # Google Cloud Functions
